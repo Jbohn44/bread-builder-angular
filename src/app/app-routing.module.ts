@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SplashPageComponent } from './splash-page/splash-page/splash-page.component';
 
 
-const routes: Routes = [{ path: 'formula', loadChildren: () => import('./formula/formula/formula.module').then(m => m.FormulaModule) }];
-
+const routes = [{path: '', component: SplashPageComponent}]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
