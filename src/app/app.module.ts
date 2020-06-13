@@ -3,21 +3,20 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SplashPageComponent } from './splash-page/splash-page/splash-page.component';
-import { FormulaPageComponent } from './formula/formula-page/formula-page.component';
-import { FormulaFormComponent } from './formula/formula-form/formula-form.component';
+import { SplashPageModule } from './splash-page/splash-page.module';
+import { SplashPageRoutingModule } from './splash-page/splash-page-routing.module'
 
 @NgModule({
   declarations: [
     AppComponent,
-    SplashPageComponent,
-    FormulaPageComponent,
-    FormulaFormComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SplashPageModule,
+    SplashPageRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

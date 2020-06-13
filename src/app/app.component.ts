@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bread-builder-angular';
+  srcImage = "assets/images/banner_logos.png";
 }
