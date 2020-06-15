@@ -1,7 +1,11 @@
 .splash-container {
-    height: 500px;
+    height: fit-content;
     width: 500px;
     margin: 20px;
     padding: 20px;
     background-color: yellowgreen;
+}
+
+.flex-container {
+    justify-content: center;
 }

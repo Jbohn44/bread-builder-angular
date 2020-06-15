@@ -1,4 +1,4 @@
-<div class="d-flex">
+<div class="d-flex flex-container">
     <div class="card splash-container">
         <div class="card-body">
             <h1>
@@ -8,7 +8,28 @@
     </div>
     <div class="card splash-container">
         <div class=" card-body">
-            <app-user-sign-up></app-user-sign-up>
+            <div class="card">
+                <div class="card-body">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-sign-up" data-toggle="tab" href="#nav-sign-up"
+                                role="tab" aria-controls="nav-sign-up" aria-selected="true">Sign Up.</a>
+                            <a class="nav-item nav-link" id="nav-sign-in" data-toggle="tab" href="#nav-sign-in"
+                                role="tab" aria-controls="nav-sign-in" aria-selected="false">Sign In.</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-sign-up" role="tabpanel"
+                            aria-labelledby="nav-sign-up">
+                            <app-user-sign-up></app-user-sign-up>
+                        </div>
+                        <div class="tab-pane fade" id="nav-sign-in" role="tabpanel" aria-labelledby="nav-sign-in">
+                            <app-user-login></app-user-login>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 

@@ -13,7 +13,7 @@ export class UserSignUpComponent implements OnInit {
 
   ngOnInit() {
     // maybe init these in class properties section?
-    this.userSignUp = {FirstName: '', LastName: '', UserName: '', Email: '', Password: ''};
+    this.userSignUp = {UserName: '', Email: '', Password: ''};
     this.passwordCheck = '';
   }
 
