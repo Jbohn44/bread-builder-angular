@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SplashPageModule } from './splash-page/splash-page.module';
 import { SplashPageRoutingModule } from './splash-page/splash-page-routing.module';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     SplashPageModule,
     SplashPageRoutingModule,
     AppRoutingModule,

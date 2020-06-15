@@ -6,13 +6,15 @@ import { SplashComponent } from './splash/splash.component';
 import { UserComponent } from './user/user.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserSignUpComponent } from './user-sign-up/user-sign-up.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [SplashComponent, UserComponent, UserLoginComponent, UserSignUpComponent],
   imports: [
     CommonModule,
-    SplashPageRoutingModule
+    SplashPageRoutingModule,
+    FormsModule
   ]
 })
 export class SplashPageModule { }
