@@ -3,7 +3,7 @@
     width: 500px;
     margin: 20px;
     padding: 20px;
-    background-color: yellowgreen;
+    background-color: var(--global-gray);
 }
 
 .flex-container {
