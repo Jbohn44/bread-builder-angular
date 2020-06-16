@@ -7,6 +7,8 @@ import { SplashPageModule } from './splash-page/splash-page.module';
 import { SplashPageRoutingModule } from './splash-page/splash-page-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { FormsModule } from '@angular/forms';
     SplashPageModule,
     SplashPageRoutingModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    ModalModule.forRoot()
 
   ],
   providers: [],

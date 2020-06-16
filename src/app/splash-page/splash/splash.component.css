@@ -3,9 +3,17 @@
     width: 500px;
     margin: 20px;
     padding: 20px;
-    background-color: var(--global-gray);
+    background-color: var(--global-green);
 }
 
 .flex-container {
     justify-content: center;
+}
+
+.sign-up-link{
+    color: blue;
+}
+.sign-up-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
