@@ -17,3 +17,7 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+.splash-background{
+    background-color: var(--global-dark-gray);
+}

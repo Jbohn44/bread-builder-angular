@@ -1,23 +1,33 @@
-<div class="d-flex flex-container">
-    <div class="card splash-container">
-        <div class="card-body">
-            <h1>
-                Welcome.
-            </h1>
-        </div>
-    </div>
-    <div class="card splash-container">
-        <div class=" card-body">
-            <app-user-login></app-user-login>
-            Don't have an account? <span class="sign-up-link" (click)="openModal(template)">Sign Up.</span>
+<div class="splash-background">
 
+    <div class="d-flex flex-container">
+        <div class="card splash-container">
+            <div class="card-body">
+                <h1>
+                    Build.
+                </h1>
+                <h1>
+                    More.
+                </h1>
+                <h1>
+                    Bread.
+                </h1>
+            </div>
+        </div>
+        <div class="card splash-container">
+            <div class=" card-body">
+                <app-user-login></app-user-login>
+                <div>Don't have an account? <span class="sign-up-link" (click)="openModal(template)">Sign Up.</span>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
 
 <ng-template #template>
     <div class="modal-header">
-        <h4 class="modal-title pull-left">Create Account.</h4>
+        <h4 class="modal-title pull-left">Create An Account.</h4>
         <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
             <span aria-hidden="true">&times;</span>
         </button>

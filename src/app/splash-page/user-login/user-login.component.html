@@ -1,11 +1,24 @@
 <div>
     <div class="card">
-        <div class="card-header c-header">
-        <h5 class="">Log In.</h5>
+        <div class="card-header">
+        <h5 class="">Sign In.</h5>
         </div>
         <div class="card-body">
             <div class="form-group">
-
+                <div class="form-group">
+                    <label for="userName">User Name:</label>
+                    <input type="text" id="userName" name="userName" placeholder="" class="form-control" required
+                        [(ngModel)]="userLogin.UserName">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="" class="form-control" required
+                        [(ngModel)]="userLogin.Password">
+                </div>
+               
+                <div>
+                    <button class="btn btn-success">Sign In.</button>
+                </div>
             </div>
         </div>
     </div>
